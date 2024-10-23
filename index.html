@@ -1,34 +1,68 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskey &mdash; Organize yourself!</title>
 
-    <title>TASKS &mdash; create tasks!</title>
+    <!-- Tabler Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
   </head>
   <body>
-  
+    <!-- 
+      MARK: Navbar
+    -->
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">TASK</a>
+        <a class="btn btn-ghost text-xl">Taskey</a>
       </div>
       <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Link</a></li>
-          <li>
-            <details>
-              <summary>TASK manager</summary>
-              <ul class="bg-base-100 rounded-t-none p-2">
-                <li><a>Link 1</a></li>
-                <li><a>Link 2</a></li>
-              </ul>
-            </details>
-          </li>
-        </ul>
+        <a
+          class="btn btn-square btn-ghost"
+          href="https://github.com/gliese-sketch/taskey"
+          target="_blank"
+        >
+          <i class="ti ti-brand-github text-2xl"></i>
+        </a>
       </div>
     </div>
-    <div class></div>
-    <div id="app"></div>
+
+    <!-- 
+      MARK: Main
+    -->
+    <main class="container h-screen flex items-center">
+      <div class="card bg-base-100 w-64 sm:w-80 md:w-96 mx-auto shadow-xl">
+        <figure>
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+            alt="pattern"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Taskey &mdash; Organize yourself!</h2>
+          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 
+      MARK: Footer
+    -->
+    <footer class="footer footer-center bg-base-300 text-base-content p-4">
+      <aside>
+        <p>
+          Copyright © {new Date().getFullYear()} - All right reserved by
+          <a href="https://github.com/gliese-sketch">Gliese Sketch</a>
+        </p>
+      </aside>
+    </footer>
     <script type="module" src="src/main.js"></script>
   </body>
 </html>
